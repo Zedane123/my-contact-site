@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার সাথে যোগাযোগ করুন</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>যোগাযোগ করুন</h1>
+        <p>আমি ওয়েবসাইট, অ্যাপ এবং গেম তৈরি করতে শিখছি। আমাকে মেসেজ পাঠাতে নিচের ফর্মটি পূরণ করুন।</p>
+        <form action="mailto:nargisparvinkoyra230@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="আপনার নাম" required>
+            <input type="email" name="Email" placeholder="আপনার ইমেইল" required>
+            <textarea name="Message" rows="4" placeholder="আপনার মেসেজ লিখুন..." required></textarea>
+            <button type="submit">মেসেজ পাঠান</button>
+        </form>
+    </div>
+</body>
+</html>
