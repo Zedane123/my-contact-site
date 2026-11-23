@@ -13,6 +13,8 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 16px;
+            box-sizing: border-box;
         }
         .card {
             background: #ffffff;
@@ -20,7 +22,7 @@
             border-radius: 14px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
             max-width: 420px;
-            width: 90%;
+            width: 100%;
             text-align: center;
         }
         h1 {
@@ -29,8 +31,8 @@
             margin-bottom: 8px;
         }
         p {
-            color: #555;
-            font-size: 14px;
+            color: #444;
+            font-size: 15px;
             line-height: 1.5;
             margin-bottom: 22px;
         }
@@ -62,12 +64,33 @@
         button:hover {
             background-color: #1557b0;
         }
+        .divider {
+            margin: 18px 0;
+            color: #888;
+            font-size: 13px;
+        }
+        .whatsapp-btn {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            background-color: #25D366;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            box-sizing: border-box;
+            transition: background 0.2s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe5d;
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>যোগাযোগ করুন</h1>
-        <p>আমি ওয়েবসাইট, অ্যাপ এবং গেম তৈরি করতে শিখছি। আপনার কী ধরনের ওয়েবসাইট বা প্রজেক্ট প্রয়োজন তা নিচের ফর্মে লিখে পাঠান।</p>
+        <p>আমি ওয়েবসাইট, অ্যাপ এবং গেম তৈরি করতে পারি। আপনার কী ধরনের ওয়েবসাইট বা প্রজেক্ট প্রয়োজন তা নিচের ফর্মে লিখে পাঠান অথবা সরাসরি WhatsApp-এ মেসেজ করুন।</p>
         
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="aca9ccaf-f159-477c-8ec2-a74eb19eed75">
@@ -76,8 +99,15 @@
             <input type="email" name="email" placeholder="আপনার ইমেইল" required>
             <textarea name="message" rows="4" placeholder="আপনি কী ধরনের ওয়েবসাইট বানাতে চান তা লিখুন..." required></textarea>
             
-            <button type="submit">মেসেজ পাঠান</button>
+            <button type="submit">ইমেইলে মেসেজ পাঠান</button>
         </form>
+
+        <div class="divider">অথবা</div>
+
+        <!-- নিচের 8801925986904 বদলে আপনার আসল WhatsApp নম্বর দিন -->
+        <a class="whatsapp-btn" href="https://wa.me/8801925986904?text=হ্যালো,%20আমি%20একটি%20ওয়েবসাইট/প্রজেক্ট%20তৈরি%20করার%20ব্যাপারে%20কথা%20বলতে%20চাই।" target="_blank">
+            WhatsApp-এ মেসেজ করুন
+        </a>
     </div>
 </body>
 </html>
