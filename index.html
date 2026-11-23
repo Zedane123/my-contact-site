@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আমার সাথে যোগাযোগ করুন</title>
+    <title>Zedane - যোগাযোগ করুন</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,42 +16,48 @@
         }
         .card {
             background: #ffffff;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+            padding: 32px;
+            border-radius: 14px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            max-width: 420px;
             width: 90%;
             text-align: center;
         }
         h1 {
             color: #1a73e8;
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 8px;
         }
         p {
             color: #555;
             font-size: 14px;
-            margin-bottom: 20px;
+            line-height: 1.5;
+            margin-bottom: 22px;
         }
         input, textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 12px;
+            padding: 12px;
+            margin-bottom: 14px;
             border: 1px solid #cbd5e1;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 14px;
             box-sizing: border-box;
         }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #1a73e8;
+        }
         button {
             width: 100%;
-            padding: 12px;
+            padding: 13px;
             background-color: #1a73e8;
             color: #ffffff;
             border: none;
-            border-radius: 6px;
-            font-size: 15px;
+            border-radius: 8px;
+            font-size: 16px;
             font-weight: bold;
             cursor: pointer;
+            transition: background 0.2s;
         }
         button:hover {
             background-color: #1557b0;
@@ -61,11 +67,15 @@
 <body>
     <div class="card">
         <h1>যোগাযোগ করুন</h1>
-        <p>আমি ওয়েবসাইট, অ্যাপ এবং গেম তৈরি করতে শিখছি। আমাকে মেসেজ পাঠাতে নিচের ফর্মটি পূরণ করুন।</p>
-        <form action="mailto:nargisparvinkoyra230@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="Name" placeholder="আপনার নাম" required>
-            <input type="email" name="Email" placeholder="আপনার ইমেইল" required>
-            <textarea name="Message" rows="4" placeholder="আপনার মেসেজ লিখুন..." required></textarea>
+        <p>আমি ওয়েবসাইট, অ্যাপ এবং গেম তৈরি করতে শিখছি। আপনার কী ধরনের ওয়েবসাইট বা প্রজেক্ট প্রয়োজন তা নিচের ফর্মে লিখে পাঠান।</p>
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="aca9ccaf-f159-477c-8ec2-a74eb19eed75">
+            
+            <input type="text" name="name" placeholder="আপনার নাম" required>
+            <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+            <textarea name="message" rows="4" placeholder="আপনি কী ধরনের ওয়েবসাইট বানাতে চান তা লিখুন..." required></textarea>
+            
             <button type="submit">মেসেজ পাঠান</button>
         </form>
     </div>
